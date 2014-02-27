@@ -3,6 +3,15 @@
 
 import sys
 
+# --------------------------------------------------------------- #
+# Thanks for http://d.hatena.ne.jp/laaambda/20080619/1213867044
+# --------------------------------------------------------------- #
+
+def insert_str(repl, string, pos):
+    front = string[:pos]
+    rear = string[pos:]
+    return front+repl+rear
+
 n = int(sys.argv[1])
 num = n * 2 - 1
 q = 1 # 組み合わせ数
@@ -29,4 +38,15 @@ for i in range(q):
         else:
             array[j] -= 1
 
-print p
+# 最後に出力する配列
+ans = []
+model = "()"
+
+for i in p:
+    obj = ""
+    for j in i:
+        obj = insert_str(model, obj, j)
+    # if obj not in ans:
+    ans.append(obj)
+
+print ans
