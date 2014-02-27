@@ -3,24 +3,24 @@
 
 class Stack:
 
-    def __init__(self,stac):
-        self.stac = stac
-        self.leng = len(seflf.stac)
+    def __init__(self,stack):
+        self.stac = stack
+        self.leng = len(seflf.stack)
 
     def boolean empty():
         return True if leng == 0 else return False
 
 
     def T_peek():
-        return self.stac[-1]
+        return self.stack[-1]
 
     def T_pop():
-        s = self.stac[-1]
-        self.stac.pop()
+        s = self.stack[-1]
+        self.stack.pop()
         return s
 
     def T_push(obj):
-        self.stac.append(obj)
+        self.stack.append(obj)
 
     def size():
         return leng
