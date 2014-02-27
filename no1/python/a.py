@@ -4,12 +4,15 @@
 class Stack:
 
     def __init__(self,stack):
-        self.stac = stack
-        self.leng = len(seflf.stack)
+        self.stack = stack
+        self.leng = len(self.stack)
 
-    def boolean empty():
-        return True if leng == 0 else return False
-
+    def empty():
+        # return "True" if self.leng == 0 else "False"
+        if self.leng == 0:
+            return "true"
+        else:
+            return "false"
 
     def T_peek():
         return self.stack[-1]

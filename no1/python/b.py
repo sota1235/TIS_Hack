@@ -15,7 +15,7 @@ class Queue:
     def T_peek():
         return self.stack1(0)
 
-    def T_remove
+    def T_remove():
         s = self.stack(0)
         self.stack1.pop(0)
         self.stack2.pop(0)
