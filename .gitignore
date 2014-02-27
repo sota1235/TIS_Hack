@@ -4,6 +4,7 @@
 node_modules
 *.swp
 tel.txt
+test.*
 
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
