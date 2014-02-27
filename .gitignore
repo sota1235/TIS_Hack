@@ -3,6 +3,7 @@
 .Apple*
 node_modules
 *.swp
+tel.txt
 
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
