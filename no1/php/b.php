@@ -5,23 +5,25 @@ class Queue {
   public function __construct($list){
     require_once("./a.php");
 
-    $this->stack = new Stack(array_reverse($list));
+    $this->stack1 = new Stack($list);
+    $this->stack2 = new Stack($list);
   }
 
   public function add($value){
-    $this->stack->T_push($value);
+    $this->stack1->T_push($value);
+    $this->stack2->T_push($value);
   }
 
   public function T_peek(){
-    $this->stack->T_peek();
+    $this->stack1->T_peek();
   }
 
   public function T_remove(){
-    $this->stack->T_remove();
+    $this->stack1->T_remove();
   }
 
   public function size(){
-    return $this->stack->size();
+    return $this->stack1->size();
   }
 }
 
