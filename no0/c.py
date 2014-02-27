@@ -31,6 +31,7 @@ def isSubstring(s1, s2):
                 print "false"
             sys.exit()
 
+# for debug
 s1_d = sys.argv[1]
 s2_d = sys.argv[2]
 
