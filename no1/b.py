@@ -3,22 +3,22 @@
 
 class Queue:
 
-    def __init__(self,stac):
-        self.stac1 = stac
-        self.stac2 = stac
-        self.leng = len(stac)
+    def __init__(self,stack):
+        self.stack1 = stack
+        self.stack2 = stack
+        self.leng = len(stack)
 
     def add(obj):
         stac1.queue.append(obj)
         stac2.queue.append(obj)
 
     def T_peek():
-        return self.stac1(0)
+        return self.stack1(0)
 
     def T_remove
-        s = self.stac(0)
-        self.stac1.pop(0)
-        self.stac2.pop(0)
+        s = self.stack(0)
+        self.stack1.pop(0)
+        self.stack2.pop(0)
         return s
 
     def size():
