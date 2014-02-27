@@ -13,15 +13,17 @@ def isSubstring(s1, s2):
         sys.exit()
 
     while(len(s1) != 0):
-        if s2[0] in s1[0]:
-            index == s2.index(s1[0])
+        if s1[0] in s2:
+            index = s2.index(s1[0])
         else:
             print "false"
             sys.exit()
         i = 0
-        while(s1[index+0] == s2[index+0]):
-            s1.pop(index+0)
-            s2.pop(index+0)
+        while(s1[0] == s2[index] and len(s1) != 1):
+            s1.pop(0)
+            s2.pop(index)
+            if index == len(s2):
+                break
         if len(s1) == 1:
             if s1[0] == s2[0]:
                 print "true"
