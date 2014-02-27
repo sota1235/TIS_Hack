@@ -8,8 +8,8 @@ class Queue {
     $this->stack1 = new Stack($list);
     $this->stack2 = new Stack($list);
     for($i=0;$i<count($list);$i++){
-      $this->stack1->T_push($this->stack2->T_remove());
-      $this->stack1->T_remove();
+      $this->stack1->T_push($this->stack2->T_pop());
+      $this->stack1->T_pop();
     }
   }
 
@@ -18,7 +18,7 @@ class Queue {
   }
 
   public function T_peek(){
-    $this->stack1->T_peek();
+    return $this->stack1->T_peek();
   }
 
   public function T_remove(){

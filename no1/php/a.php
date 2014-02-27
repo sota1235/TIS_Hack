@@ -4,20 +4,21 @@ class Stack {
 
   public function __construct($list) {
     $this->stack = $list;
-    $this->length = count($list);
   }
 
   public function empty_y(){
-    if($this->length==0) return True;
+    if(count($this->stack)==0) return True;
     else return false;
   }
 
   public function T_peek(){
-    return $this->stack[$this->length-1];
+    return $this->stack[count($this->stack)-1];
   }
 
   public function T_pop(){
-    return $array_pop($this->stack);
+    $s = $this->stack[count($this->stack)-1];
+    array_pop($this->stack);
+    return $s;
   }
 
   public function T_push($value){
@@ -25,7 +26,7 @@ class Stack {
   }
 
   public function size(){
-    return $this->length;
+    return count($this->stack);
   }
 }
 
