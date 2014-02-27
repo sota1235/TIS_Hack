@@ -1,6 +1,6 @@
 <?php
 
-class Stack() {
+class Stack {
 
   public function __construct($list) {
     $this->stack = $list;
@@ -28,3 +28,5 @@ class Stack() {
     return $this->length;
   }
 }
+
+?>
