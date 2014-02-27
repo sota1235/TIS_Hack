@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import itertools
 
 # --------------------------------------------------------------- #
 # Thanks for http://d.hatena.ne.jp/laaambda/20080619/1213867044
@@ -37,6 +38,7 @@ for i in range(q):
             array[j] = array_back[j]
         else:
             array[j] -= 1
+print p
 
 # 最後に出力する配列
 ans = []
@@ -46,7 +48,7 @@ for i in p:
     obj = ""
     for j in i:
         obj = insert_str(model, obj, j)
-    # if obj not in ans:
-    ans.append(obj)
+    if obj not in ans:
+        ans.append(obj)
 
 print ans
