@@ -7,11 +7,14 @@ class Queue {
 
     $this->stack1 = new Stack($list);
     $this->stack2 = new Stack($list);
+    for($i=0;$i<count($list);$i++){
+      $this->stack1->T_push($this->stack2->T_remove());
+      $this->stack1->T_remove();
+    }
   }
 
   public function add($value){
     $this->stack1->T_push($value);
-    $this->stack2->T_push($value);
   }
 
   public function T_peek(){
