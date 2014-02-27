@@ -6,19 +6,16 @@ def minus(a, b):
     flag = 'a' if a > b else 'b'
     while a != b:
         ans += 1
-        if a > b:
-            b += 1
-        else:
-            a += 1
+        if a > b: b += 1
+        else: a += 1
     return ans if flag == 'a' else int('-'+str(ans))
 
 def multiply(a, b):
     ans = 0
-    for i in range(b):
-        ans += a
+    for i in range(b): ans += a
     return ans
 
-# 実数バージョン
+# integral number ver
 def devide(a, b):
     ans = 0
     while b < a:
@@ -27,6 +24,6 @@ def devide(a, b):
     return ans
 
 # debug
-print multiply(3, 4)
-print devide(15, 3)
-print minus(15, 18)
+print "3 * 4 = " + str(multiply(3, 4))
+print "15 / 3 = " + str(devide(15, 3))
+print "15 - 18 = " + str(minus(15, 18))
