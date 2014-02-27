@@ -7,9 +7,9 @@ class Queue {
 
     $this->stack1 = new Stack($list);
     $this->stack2 = new Stack($list);
+    while(!$this->stack1->empty_y()) $this->stack1->T_pop();
     for($i=0;$i<count($list);$i++){
       $this->stack1->T_push($this->stack2->T_pop());
-      $this->stack1->T_pop();
     }
   }
 

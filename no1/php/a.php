@@ -8,7 +8,7 @@ class Stack {
 
   public function empty_y(){
     if(count($this->stack)==0) return True;
-    else return false;
+    else return False;
   }
 
   public function T_peek(){
