@@ -1,25 +1,24 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from a import Stack
+
 class Queue:
 
     def __init__(self,stack):
-        self.stack1 = stack
-        self.stack2 = stack
-        self.leng = len(stack)
+        self.stack1 = Stack(stack)
+        self.stack2 = Stack(stack)
+        while !self.stack1.empty(): self.stack1.T_pop()
+        while !self.stack2.empty(): self.stack1.T_push(self.stack2.T_pop())
 
-    def add(obj):
+    def add(self,obj):
         stac1.queue.append(obj)
-        stac2.queue.append(obj)
 
     def T_peek(self):
-        return self.stack1(0)
+        return self.stack1.T_peek()
 
     def T_remove(self):
-        s = self.stack(0)
-        self.stack1.pop(0)
-        self.stack2.pop(0)
-        return s
+        self.stack1.T_remove
 
     def size(self):
-        return leng
+        self.stack1.size()

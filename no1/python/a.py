@@ -17,7 +17,7 @@ class Stack:
     def T_peek(self):
         return self.stack[-1]
 
-    def T_pop():
+    def T_pop(self):
         s = self.stack[-1]
         self.stack.pop()
         return s
