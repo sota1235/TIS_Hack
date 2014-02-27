@@ -14,8 +14,8 @@ def isSubstring(s1, s2):
         index = l1.index(l2[0])
         for i in range(len(l2)):
             if not l1[index+i] == l2[i]:
-                sys.exit()
-            if i == len(l2):
+                break
+            if i+1 == len(l2):
                 print "true"
                 sys.exit()
         l1.pop(index)
