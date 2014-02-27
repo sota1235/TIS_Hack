@@ -7,14 +7,14 @@ class Stack:
         self.stack = stack
         self.leng = len(self.stack)
 
-    def empty():
+    def empty(self):
         # return "True" if self.leng == 0 else "False"
         if self.leng == 0:
             return "true"
         else:
             return "false"
 
-    def T_peek():
+    def T_peek(self):
         return self.stack[-1]
 
     def T_pop():
@@ -22,8 +22,8 @@ class Stack:
         self.stack.pop()
         return s
 
-    def T_push(obj):
+    def T_push(self,obj):
         self.stack.append(obj)
 
-    def size():
+    def size(self):
         return leng

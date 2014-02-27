@@ -12,14 +12,14 @@ class Queue:
         stac1.queue.append(obj)
         stac2.queue.append(obj)
 
-    def T_peek():
+    def T_peek(self):
         return self.stack1(0)
 
-    def T_remove():
+    def T_remove(self):
         s = self.stack(0)
         self.stack1.pop(0)
         self.stack2.pop(0)
         return s
 
-    def size():
+    def size(self):
         return leng
