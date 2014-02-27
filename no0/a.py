@@ -14,5 +14,4 @@ for s in argv:
         print "false"
         sys.exit()
     count = 0
-
 print "true"
