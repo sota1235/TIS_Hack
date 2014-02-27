@@ -10,7 +10,7 @@ def minus(a, b):
             b += 1
         else:
             a += 1
-    return ans if flag == 'a' else -ans
+    return ans if flag == 'a' else int('-'+str(ans))
 
 def multiply(a, b):
     ans = 0
@@ -29,4 +29,4 @@ def devide(a, b):
 # debug
 print multiply(3, 4)
 print devide(15, 3)
-print minus(15, 3)
+print minus(15, 18)
