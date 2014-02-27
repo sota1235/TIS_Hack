@@ -7,7 +7,7 @@ class Stack {
     $this->length = count($list);
   }
 
-  public function empty(){
+  public function empty_y(){
     if($this->length==0) return True;
     else return false;
   }
