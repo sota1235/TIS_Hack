@@ -41,19 +41,19 @@ def beam(n,k,array):
             print str(beam_t) + "発目で" + s + "を破壊"
 
 # input
-"""
 print "Enter N"
 N = raw_input()
 print "Enter K"
 K = raw_input()
 print "Enter (R,C)"
 RC = raw_input()
-"""
 
 # debug
+"""
 N = 3
 K = 4
 RC = "{(0,0),(0,2),(1,1),(2,1)}"
+"""
 
 # 座標データ整形
 RC = RC.lstrip('{')
