@@ -39,6 +39,7 @@ def beam(n,k,array):
                 s += "(" + str(i[0]) + "," + str(i[1]) + ")と"
             s = s.rstrip("と")
             print str(beam_t) + "発目で" + s + "を破壊"
+    print "必要なビーム発射回数: " + str(beam_t)
 
 # input
 print "Enter N"
