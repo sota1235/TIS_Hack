@@ -68,6 +68,4 @@ if len(RC) != int(K):
     print "Error: 座標の数とKの値が一致しません"
     sys.exit()
 
-print RC
-
 beam(int(N),int(K), RC)
