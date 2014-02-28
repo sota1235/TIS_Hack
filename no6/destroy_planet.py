@@ -42,19 +42,19 @@ def beam(n,k,array):
     print "必要なビーム発射回数: " + str(beam_t)
 
 # input
-"""
 print "Enter N"
 N = raw_input()
 print "Enter K"
 K = raw_input()
 print "Enter (R,C)"
 RC = raw_input()
-"""
 
 # debug
+"""
 N = 3
 K = 4
 RC = "{(0,0),(0,2),(1,1),(2,1)}"
+"""
 
 # 座標データ整形
 RC = RC[2:-1].split('(')
@@ -62,6 +62,7 @@ for i in range(len(RC)):
     RC[i] = map(int, RC[i][0:3].split(','))
 
 # エラーチェック
+# TODO : 項目増やす
 if len(RC) != int(K):
     print "Error: 座標の数とKの値が一致しません"
     sys.exit()
