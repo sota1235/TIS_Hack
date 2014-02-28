@@ -15,8 +15,6 @@ def beam(n,k,array):
     for i in range(k):
         x_list[array[i][0]] += 1
         y_list[array[i][1]] += 1
-    print x_list
-    print y_list
 
     # 発射する列,行を決定
     while(sum(x_list) != 0 and sum(y_list) != 0):
@@ -30,13 +28,7 @@ def beam(n,k,array):
             index = x_list.index(max(x_list))
             x_list[index] = 0
             flag = 0
-        print index
-        print flag
-        print planet_array
         for i in range(len(planet_array)):
-            print i
-            print flag
-            print planet_array[i][flag]
             if planet_array[i][flag] == index:
                 box.append(planet_array[i])
                 planet_array[i] = [n+1, n+1]
