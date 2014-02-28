@@ -46,3 +46,26 @@ print "3 * 4 = " + str(multiply(3, 4))
 print "15 / 3 = " + str(devide(15, 3))
 print "15 - 18 = " + str(minus(15, 18))
 print "5 / 2 = " + str(devide_d(5, 2))
+
+# 発表用
+while 1:
+    print "please operation"
+    print "ex) 3 + 7"
+    str = list(raw_input())
+    if len(str) != 3:
+        print "Error: 書式が違います"
+        continue
+    a = int(str[0]), b = int(str[2])
+    calc = str[1]
+    if calc == "+":
+        ans = a + b
+    else if calc == "-":
+        ans = minus(a,b)
+    else if calc == "*":
+        ans = multiply(a,b)
+    else if calc == "/":
+        ans = devide(a,b)
+    else:
+        print "Error: 記号が無効です"
+        continue
+    print "answer : " + ans
