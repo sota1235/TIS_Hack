@@ -33,10 +33,12 @@ def beam(n,k,array):
                 box.append(planet_array[i])
                 planet_array[i] = [n+1, n+1]
         if box != []:
-            beam_array.append(box)
             beam_t += 1
-    print beam_array
-    print beam_t
+            s = ""
+            for i in box:
+                s += "(" + str(i[0]) + "," + str(i[1]) + ")と"
+            s = s.rstrip("と")
+            print str(beam_t) + "発目で" + s + "を破壊"
 
 # input
 """
