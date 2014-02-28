@@ -17,6 +17,9 @@ def multiply(a, b):
 
 # integral number ver
 def devide(a, b):
+    # 1を下回る場合
+    # 返り値がintの場合はルール違反…
+    if a < b: return str(a) + "/" + str(b)
     ans = 0
     bb = b
     while b < a:
