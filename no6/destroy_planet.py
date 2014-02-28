@@ -3,12 +3,14 @@
 
 import sys
 
-def beam(n,array):
+def beam(n,k,array):
     x_list = [0 for i in range(n)]
     y_list = [0 for i in range(n)]
-    for i in range(n):
-        x_list[i] = array[i][0]
-        y_list[i] = array[i][1]
+
+    # make list of x,y
+    for i in range(k):
+        x_list[array[i][0]] += 1
+        y_list[array[i][1]] += 1
     print x_list
     print y_list
 
@@ -25,7 +27,6 @@ RC = RC.lstrip('{')
 RC = RC.rstrip('}')
 RC = RC.split('(')
 RC.pop(0)
-print RC
 for i in range(len(RC)):
     RC[i] = RC[i].replace(')', '')
     RC[i] = RC[i].rstrip(',')
@@ -39,4 +40,4 @@ if len(RC) != int(K):
 
 print RC
 
-beam(int(K), RC)
+beam(int(N),int(K), RC)
