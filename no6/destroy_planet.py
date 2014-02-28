@@ -57,11 +57,10 @@ K = 4
 RC = "{(0,0),(0,2),(1,1),(2,1)}"
 
 # 座標データ整形
-RC = RC[2:-1]
-RC = RC.split('(')
+RC = RC[2:-1].split('(')
 for i in range(len(RC)):
-    RC[i] = RC[i][0:3]
-    RC[i] = map(int, RC[i].split(','))
+    RC[i] = map(int, RC[i][0:3].split(','))
+    # RC[i] = map(int, RC[i].split(','))
 
 # エラーチェック
 if len(RC) != int(K):
