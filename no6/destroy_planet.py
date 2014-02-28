@@ -45,12 +45,9 @@ def beam(n,k,array):
     print "必要なビーム発射回数: " + str(beam_t)
 
 # input
-print "Enter N"
-N = raw_input()
-print "Enter K"
-K = raw_input()
-print "Enter (R,C)"
-RC = raw_input()
+N = raw_input("Enter N -->")
+K = raw_input("Enter K -->")
+RC = raw_input("Enter RC -->")
 
 # debug
 """
