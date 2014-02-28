@@ -60,7 +60,6 @@ RC = "{(0,0),(0,2),(1,1),(2,1)}"
 RC = RC[2:-1].split('(')
 for i in range(len(RC)):
     RC[i] = map(int, RC[i][0:3].split(','))
-    # RC[i] = map(int, RC[i].split(','))
 
 # エラーチェック
 if len(RC) != int(K):
