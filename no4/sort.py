@@ -11,13 +11,13 @@ def main(array):
     for i in range(len(old)):
         if old[i] != new[i]:
             m = i
-            old = old[:i+1]
-            new = new[:i+1]
+            old = old[i:]
+            new = new[i:]
             break
     # nを求める
     for j in range(len(old)):
-        if old[-i+1] != new[-i+1]:
-            n = m + len(old) - i
+        if old[-j-1] != new[-j-1]:
+            n = m + len(old) - j
             break
     print "m="+str(m)
     print "n="+str(n)
