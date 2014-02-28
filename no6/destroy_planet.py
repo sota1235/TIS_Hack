@@ -1,6 +1,9 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# Created by sota1235
+# Date 2014/02/28
+
 import sys
 
 def beam(n,k,array):
